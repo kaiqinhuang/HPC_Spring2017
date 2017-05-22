@@ -1,0 +1,2 @@
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -file /home/raj_ops/test/
+mapper.py -mapper "python mapper.py" -file /home/raj_ops/test/reducer.py -reducer "python reducer.py" -input /user/raj_ops/test_MR/data/* -output /user/raj_ops/test_MR/wordcount-output                                                
